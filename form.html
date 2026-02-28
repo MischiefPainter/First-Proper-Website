@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LogIn/SignUp</title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+
+    </head>
+
+    <body>
+        <br>
+        <div class="container">
+            <div class="form-box active" id="login-form">
+                <h1>Log In</h1>
+                <form id="loginForm">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                </form>
+                <p>Don't have an account yet? <a href="#" onclick="showForm('register-form')">Register</a></p>
+            </div>
+
+            <div class="clear"></div>
+            <div class="form-box" id="register-form">
+                <h1>Sign Up</h1> <br>
+                <form id="registerForm">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    <input type="tel" name="phone" placeholder="09637192551" required>
+                    <input type="date" name="birthday" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account yet? <a href="#" onclick="showForm('login-form')">Log In</a></p>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>

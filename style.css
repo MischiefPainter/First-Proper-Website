@@ -1,0 +1,299 @@
+/* =========================
+   Google Fonts
+   ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* =========================
+   General Body
+   ========================= */
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #ffffff;
+}
+
+.btns, .btns li a{ 
+    text-decoration: none; list-style: none;
+     gap: 5px; display: flex; color:#ffffff;
+     } 
+     
+.btns li a:hover { 
+    transform: scale(1.05); 
+    font-weight: bold; 
+    list-style: none; color:#cecccc }
+
+/* =========================
+   Boxes Section (4 boxes side by side, centered)
+   ========================= */
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers boxes horizontally */
+    height: 60vh; /* Centers the whole row */
+    margin: auto;
+    gap: 50px;               /* Space between boxes */
+    flex-wrap: wrap;         /* Allows wrapping on smaller screens */
+    
+}
+
+.box h3 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.box h3 a:hover {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.box{
+    background-color: #4a4f2b;
+    color: white;
+    width: 200px;            /* Fixed width for each box */
+    height: 500px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #5f643c;
+    transform: scale(1.2);
+}
+
+.profile-pic {
+    width: 100%;            /* Full width inside the box */
+    height: 200px;          /* Fixed height */
+    object-fit: cover;      
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   Form Container
+   ========================= */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* =========================
+   Hero Section
+   ========================= */
+.hero {
+    background-color: #4a4f2b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 0px;
+    position: relative;
+    height : 100vh;
+
+}
+
+.clear {
+    display: block;
+}
+
+/* =========================
+   Navigation
+   ========================= */
+
+.Navigation {
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.navdiv {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* logo left, links right */
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo a {
+    font-family: 'Gravitas One', cursive;
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.s ease, transform 1.2s ease;
+}
+
+.logo a:hover {
+    color: #4a4f2b;
+    transform: scale(1.5);
+}
+
+/* Navigation Links */
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;       /* space between links */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navlinks li a:hover {
+    color: #4a4f2b;
+    transform: scale(1.2);
+    font-size: 14px;
+    text-decoration: underline;
+    
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #5f643c;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: #5f643c;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* =========================
+   Polaroid Images
+   ========================= */
+.right.index {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    padding: 60px;
+    scale: 1.6;
+    top: 190px;
+    left: -120px;
+}
+
+.left.index {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    top: -180px;
+    padding: 20px;
+    top: 0px;
+    left: 100px;
+}
+
+.right, .left {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    top: -180px;
+    padding: 20px;
+}
+
+.left h1 {
+    font-size: 80px;
+    line-height: 1.1;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.polaroid {
+    background: white;
+    padding: 10px;
+    position: absolute;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.polaroidimg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pfp {
+    transition: transform 0.3s ease;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-color: #5f643c;
+    border-radius: 50%;
+}
+
+.pfp:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.links {
+    list-style: none;        /* removes bullets */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;            /* makes text white */
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.links a:hover {
+    color: white;
+
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Image Positions */
+.p1 { transition: transform 0.3s ease, z-index 0.3s ease; top: 0; left: 100px; transform: rotate(-10deg); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);}
+.p2 { transition: transform 0.3s ease, z-index 0.3s ease; top: 100px; left: 0; transform: rotate(8deg); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);}
+.p3 { transition: transform 0.3s ease, z-index 0.3s ease; top: 150px; left: 180px; transform: rotate(-5deg); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);}
+
+/*  Hover Image Positions */
+.p1:hover { z-index: 10; transform: rotate(0deg) scale(1.2); left: 100px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);}
+.p2:hover { z-index: 10; top: 100px; left: 0; transform: rotate(-2deg) scale(1.2);  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);}
+.p3:hover { z-index: 10; top: 150px; left: 180px; transform: rotate(4deg) scale(1.2); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);}
+
+

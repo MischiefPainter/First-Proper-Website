@@ -1,0 +1,279 @@
+/* =========================
+   Google Fonts
+   ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* =========================
+   General Body
+   ========================= */
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #ffffff;
+}
+
+.btns, .btns li a{ 
+    text-decoration: none; list-style: none;
+     gap: 5px; display: flex; color:#ffffff;
+     } 
+     
+.btns li a:hover { 
+    transform: scale(1.05); 
+    font-weight: bold; 
+    list-style: none; color:#cecccc }
+
+/* =========================
+   Boxes Section (4 boxes side by side, centered)
+   ========================= */
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers boxes horizontally */
+    height: 60vh; /* Centers the whole row */
+    margin: auto;
+    gap: 50px;               /* Space between boxes */
+    flex-wrap: wrap;         /* Allows wrapping on smaller screens */
+    
+}
+
+.box {
+    background-color: #4a4f2b;
+    color: white;
+    width: 200px;            /* Fixed width for each box */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #5f643c;
+    transform: scale(1.2);
+}
+
+.profile-pic {
+    width: 100%;            /* Full width inside the box */
+    height: 200px;          /* Fixed height */
+    object-fit: cover;      
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   Form Container
+   ========================= */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* =========================
+   Hero Section
+   ========================= */
+.hero {
+    background-color: #4a4f2b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align to top instead of center */
+    padding: 80px;
+    gap: 60px; /* spacing between left & right */
+    flex-wrap: wrap; /* prevents overflow on smaller screens */
+}
+
+.clear {
+    display: block;
+}
+
+/* =========================
+   Navigation
+   ========================= */
+
+.Navigation {
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.navdiv {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* logo left, links right */
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo a {
+    font-family: 'Gravitas One', cursive;
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.s ease, transform 1.2s ease;
+}
+
+.logo a:hover {
+    color: #4a4f2b;
+    transform: scale(1.5);
+}
+
+/* Navigation Links */
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;       /* space between links */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navlinks li a:hover {
+    color: #4a4f2b;
+    transform: scale(1.2);
+    font-size: 14px;
+    text-decoration: underline;
+    
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #5f643c;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: #4a4f2b;
+    transform: scale(1.05);
+}
+
+/* =========================
+   Polaroid Images
+   ========================= */
+.right {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* LEFT SIDE (TEXT) */
+.left {
+    flex: wrap;              /* take available space */
+    min-width: 300px;
+    max-width: 600px;     /* prevents text from stretching too wide */
+    left: 40px;
+    margin: 20px;
+    border-color: #cecccc;
+}
+
+.left h1 {
+    font-size: 80px;
+    line-height: 1.1;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* Container (IMPORTANT for absolute positioning) */
+.right {
+    position: relative;
+}
+
+/* Base Polaroid Style */
+.polaroid {
+    background: #ffffff;
+    padding: 12px 12px 40px 12px; /* Extra bottom padding like real polaroid */
+    position: absolute;
+    border-radius: 6px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* Image */
+.polaroid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Scattered Positions */
+.p1 { top: 190px;    left: 290px;  transform: rotate(-8deg); }
+.p2 { top: -20px;    left: 180px; transform: rotate(-22deg); }
+.p3 { top: 392px;    left: 90px; transform: rotate(32deg); }
+.p4 { top: 280px;    left: -120px; transform: rotate(-8deg); }
+.p5 { top: 80px;    left: 0px; transform: rotate(2deg); }
+.p6 { top: 40px;    left: -160px; transform: rotate(32deg); }
+
+/* Hover Effect (Clean Lift Effect) */
+.polaroid:hover {
+    z-index: 10;
+    transform: scale(1.5) rotate(0deg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 600px;      /* adjust to your TV size */
+    margin: 40px auto; /* centers it */
+}
+
+/* Video */
+.video-wrapper video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* TV PNG Overlay */
+.video-wrapper .tv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none; /* so video controls still work */
+    transform: scale(1.08);
+    top: -10px;
+}
+
+.left.neru {
+    margin-right: 30px;
+    padding: 20px;
+    border-width: 2px;
+    left: 40px;
+}
+
+.right.neru {
+    left: -200px;
+}
+
+

@@ -1,0 +1,112 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+    margin: auto 10%;
+    padding: auto 10%;
+    background-color: #4a4f2b;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background-color: #010e02ac;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background:#243425ac;
+    border-radius: 6px;
+    color: #000000ac;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #010e02ac;
+
+}
+
+p {
+    font-size: 14.5px;
+    text-align: center;
+    margin-bottom: 10px;
+     
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+p a {
+    text-decoration: none;
+    color: rgb(52, 135, 243);
+}
+
+
+
+.container {
+    margin: auto;
+    padding: 30px;
+    max-width: 450px;
+    width: 100%;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+
+    background-color: #ffffffac;
+}
+
+.form-box.active {
+    display: block;
+}
+
+.form-box {
+    padding: 70px;
+    display: grid;
+    align-items: center;
+    display: none;
+}
+
+.logo a img {
+    color: white;
+    border-radius: 90%;
+    padding: auto;
+    margin: auto;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+li a {
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+li input {
+    list-style: auto;
+    color: whitesmoke;
+    font-size: auto 5%;
+    font-weight: bold;
+    align-items: center;
+}
